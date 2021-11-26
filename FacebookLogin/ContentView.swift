@@ -21,6 +21,7 @@ struct ContentView: View {
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .frame(width: 280)
                 
                 Spacer().frame(height:64)
                 
@@ -29,6 +30,7 @@ struct ContentView: View {
                         .padding(.top, 24)
                         .padding(.bottom, 12)
                         .padding(.horizontal)
+                        .keyboardType(.emailAddress)
                     Divider()
                     SecureField("Password", text: $password)
                         .padding(.top, 12)

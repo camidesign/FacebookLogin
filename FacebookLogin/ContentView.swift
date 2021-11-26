@@ -30,7 +30,7 @@ struct ContentView: View {
                         .padding(.bottom, 12)
                         .padding(.horizontal)
                     Divider()
-                    TextField("Password", text: $password)
+                    SecureField("Password", text: $password)
                         .padding(.top, 12)
                         .padding(.bottom, 24)
                         .padding(.horizontal)

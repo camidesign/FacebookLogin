@@ -22,7 +22,12 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 
-                TextField("Email", text: $email)
+                VStack{
+                    TextField("Email", text: $email)
+                    TextField("Password", text: $password)
+                }.background(Color.white)
+                    .cornerRadius(4.0)
+                
             }.padding()
         }
     }

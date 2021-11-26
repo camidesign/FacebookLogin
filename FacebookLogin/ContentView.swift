@@ -8,12 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var email: String = ""
+    @State var password: String = ""
+    
     var body: some View {
         ZStack {
             
             Color("BackgroundColor").ignoresSafeArea()
-            Text("Hello, world!")
-                .padding()
+            
+            VStack {
+                Image("logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                
+                TextField("Email", text: $email)
+            }.padding()
         }
     }
 }
